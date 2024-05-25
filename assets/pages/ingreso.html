@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cajas.css">
+    <title>Ingreso</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="contenedor">
+            
+
+            <div class="caja1">
+                <img src="../imagenes/marvelback.jpg" class="imagen" width="650px" height="600px">
+            </div>
+            <div class="caja caja2">
+                <h1>Bienvenido de Vuelta a Marvel</h1>
+                <p>Espero que sigas conociendo los Heroes de nuestra App</p>
+
+            </div>
+            <!-- <div class="caja">3</div> -->
+            <div class="caja caja2">
+                
+                    <form action="" class="formulario" id="formulario">
+                        <div class="contenedor2">
+                    
+                           
+                                <!-- grupo email -->
+                            <div class="formulario__grupo contenedor2Caja2" id="grupo__email">
+                                <!-- <label for="email" class="formulario__label">Correo Electronico</label> -->
+                                <div class="formulario__grupo-input">
+                                    <input type="email" name="email" id="email" class="formulario__input" placeholder="correo">
+                                    <i class="formulario__validacion-estado fas fa-time-circle"></i>
+                                                    
+                                </div>
+                                <p class="fomulario__input-error">El corre solo puede contene letras,numeros,puntos,guiones y guion bajo</p>
+                            </div>
+                            <!-- grupo confirmar password -->
+                            <div class="formulario__grupo contenedor2Caja2" id="grupo_password">
+                                 <!-- <label for="password2" class="formulario__label">Repertir Contraseña</label> -->
+                                    <div class="formulario__grupo-input">
+                                        <input type="password" name="password" id="password" class="formulario__input" placeholder="Contraseña">
+                                        <i class="formulario__validacion-estado fas fa-time-circle"></i>
+                                    
+                                    </div>
+                                <div>
+                                    <p class="fomulario__input-error"> </p>
+                                </div>
+                            </div> 
+                            <div class=".formulario__btn contenedor2Caja2" id="grupo_password">
+                                <button type="submit" onclick="ingresoValidacion()" >Ingresar</button>
+                            </div>  
+                        </div>
+                                           
+
+
+
+                    </form>
+                
+                
+            </div>
+            <!-- <div class="caja">5</div> -->
+            <div class="caja6">
+                <p style="align-items: center;">Aun No tienes cuenta?  <a href="../../index.html">Haz click Aqui!</a></p>
+                
+            </div>
+            
+        </div>
+
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../js/ingresoValidacion.js"></script>
+</body>
+</html>

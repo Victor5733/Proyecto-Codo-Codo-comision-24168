@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/cajas.css">
+    <title>inicio</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="contenedor">
+            
+
+            <div class="caja1">
+                <img src="./assets/imagenes/marvelback.jpg" class="imagen" width="650px" height="600px">
+            </div>
+            <div class="caja caja2">
+                <h1>Conoce a tus heroes de Marvel</h1>
+                
+                <p>Registrate para ingresar a nuestra App</p>
+
+            </div>
+            <!-- <div class="caja">3</div> -->
+            <div class="caja caja2">
+                
+                    <form action="" class="formulario" id="formulario">
+                        <div class="contenedor2">
+                    
+                            <div class="formulario__grupo-nombreApellido contenedor2Caja2 ">
+                                <!-- grupo Nombre -->
+                                <div class="formulario__nombre" id="grupo__nombre">
+                                    <!-- <label for="nombre" class="formulario__label">Nombre</label> -->
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" name="nombre" id="nombre" class="formulario__input" placeholder="Nombre">
+                                     <p class="fomulario__input-error" style="color: rgb(235, 17, 17);"></p> 
+                                                                                          
+                                    </div>
+                                     <!-- <p class="fomulario__input-error">El nombre tiene que ser de 4 a 16 caracteres</p> -->
+                                </div>
+                                                           
+
+                                <!-- grupo apellido -->
+                                <div class="formulario__grupo " id="grupo_ apellido">
+                                    <!-- <label for= "apellido" class="formulario__label">apellido</label> -->
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" name= "apellido" id= "apellido" class="formulario__input" placeholder="Apellido">
+                                        <p class="fomulario__input-error" style="color: rgb(235, 17, 17);"></p>                                                         
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="formulario__grupo formulario__grupo-input contenedor2Caja2" id="grupo_nacionalidad">
+                                        <select class="nacionalidad " id="nacionalidad"  >
+                                            <option value="paisesSuramerica">Seleccione tu pais de residencia</option>
+                                            <option value="">Argentina</option>
+                                            <option value="">Bolivia</option>
+                                            <option value="">Brasil</option>
+                                            <option value="">Colombia</option>
+                                            <option value="">Chile</option>
+                                            <option value="">Ecuador</option>
+                                            <option value="">Paraguay</option>
+                                            <option value="">Peru</option>
+                                            <option value="">Uruguay</option>
+                                            <option value="">Venezuela</option>
+                                            
+                                        </select>
+                                        <p class="fomulario__input-error">Es obligatorio selecionar un pais</p>
+                                
+                            </div>
+                                <!-- grupo email -->
+                            <div class="formulario__grupo contenedor2Caja2" id="grupo__email">
+                                <!-- <label for="email" class="formulario__label">Correo Electronico</label> -->
+                                <div class="formulario__grupo-input">
+                                    <input type="email" name="email" id="email" class="formulario__input" placeholder="correo">
+                                    <p class="fomulario__input-error" style="color: rgb(235, 17, 17);"></p> 
+                                                    
+                                </div>
+                                
+                            </div>
+                            <!-- grupo confirmar password -->
+                            <div class="formulario__grupo contenedor2Caja2" id="grupo_password2">
+                                 <!-- <label for="password2" class="formulario__label">Repertir Contraseña</label> -->
+                                    <div class="formulario__grupo-input">
+                                        <input type="password" name="password2" id="password" class="formulario__input" placeholder="Contraseña">
+                                        <p class="fomulario__input-error" style="color: rgb(235, 17, 17);"></p> 
+                                    
+                                    </div>
+                                <div>
+                                    
+                                </div>
+                            </div> 
+                            <div class="formulario__grupo" id="grupo__terminos">
+                                <label class="formulario__label">
+            
+                                    <input type="checkbox" name="terminos" id="terminos" class="formulario__checkbox">
+                                    <span class="formulario__span">Acepto los terminos y condiciones</span>
+                                    <!-- <i class="formulario__validacion-estado fas fa-check-circle"></i> -->
+                                    <p class="fomulario__input-error">Debes aceptar los terminos y condiciones</p>
+                                </label>
+                                        
+                            
+                            </div>
+                            <div class=".formulario__btn contenedor2Caja2" id="grupo_password">
+                                <button onclick="registroUsuario()">Registrarse</button>
+                            </div> 
+                        </div>
+                                           
+
+
+
+                    </form>
+                
+                
+            </div>
+            <!-- <div class="caja">5</div> -->
+            <div class="caja6">
+                <p style="align-items: center;">Ya tienes cuenta?  <a href="./assets/pages/ingreso.html">Haz click Aqui!</a></p>
+                
+            </div>
+            
+        </div>
+
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./assets/js/registroUsuario.js"></script>
+</body>
+</html>

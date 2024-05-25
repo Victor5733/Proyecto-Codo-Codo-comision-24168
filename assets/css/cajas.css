@@ -1,0 +1,140 @@
+.contenedor {
+    margin-top: 3px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.caja {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: auto;
+    
+    text-align: center;
+}
+.caja1 {
+    grid-row: 1 / 3;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+
+} 
+.caja2{
+    grid-column: 2 / 6;
+   
+    justify-content: center;
+}
+
+.caja3{
+    display: block;
+}
+
+.caja4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.contenedor2{
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    background-color:  #ffffff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    
+}
+/* justify-content: center; */
+
+.contenedor2Caja2{
+    grid-column: 1 / 3;
+    background-color:  #ffffff;
+   
+}
+.caja4_1{
+    grid-column: 1 / 2;
+    background-color:  #ffffff;
+    justify-content: center;
+}
+.caja4_2{
+    grid-column: 2 / 3;
+    background-color: #ffffff;
+    justify-content: center;
+}
+.caja6{
+    grid-column: 1 / 5;
+    background-color:  #ffffff;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 600px;
+    padding-top: 0;
+}
+image{
+    border: 3px;
+    border-radius: 10%;
+}
+.formulario__input{
+    width: 100%;
+    background:  #b9d6df;
+    border: 3px solid transparent;
+    height: 45px;
+    line-height: 45px;
+    padding: 0;
+    transition: .3s ease all;
+
+  }
+
+  .formulario__input-error{
+
+    font-size: 10px;
+    margin-bottom: 0;
+    color:#bb2929;
+  
+    
+  }
+  .formulario__btn{
+    height: 45px;
+    line-height: 45px;
+    width: 50%;
+    background: #000;
+    color: #ffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+  
+  }
+  .nacionalidad{
+    width: 100%;
+    background:  #b9d6df;
+    border: 3px solid transparent;
+    height: 45px;
+    line-height: 45px;
+    padding: 10px;
+    transition: .3s ease all;
+  }
+  
+  .formulario__btn:hover{
+    box-shadow: 3px, 0px, 30px rgba(163,163,163,1);
+  
+  }
+  @media screen and (max-width: 800px) {
+    .formulario{
+       grid-template-columns: 1fr;
+     }
+    .formulario__grupo-terminos,
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar{
+       grid-column: span 1;
+     }
+     .formulario__btn{
+       width: 100%;
+     }
+   }
+
+  
